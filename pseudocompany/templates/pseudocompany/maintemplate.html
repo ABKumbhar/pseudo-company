@@ -1,0 +1,58 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Assignment RuderFinn
+	</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+  {% include 'pseudocompany/navbar.html' %}
+
+	{% block content %}
+
+	{% endblock %}
+
+
+<script type="text/javascript">
+// When the user scrolls down 50px from the top of the document, resize the header's font size
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+
+    document.getElementById("slide").style.visibility = "visible";
+  } else {
+    document.getElementById("slide").style.visibility = "hidden";
+  }
+
+    if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+
+    document.getElementById("slide2").style.visibility = "visible";
+  } else {
+    document.getElementById("slide2").style.visibility = "hidden";
+  }
+
+     if (document.body.scrollTop > 1900 || document.documentElement.scrollTop > 1900) {
+
+    document.getElementById("slide3").style.visibility = "visible";
+  } else {
+    document.getElementById("slide3").style.visibility = "hidden";
+  }
+
+}
+
+</script>
+</body>
+
+
+</html>
